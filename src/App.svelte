@@ -1,6 +1,8 @@
 <script lang="ts">
-  import {Router, Route, Link} from 'svelte-routing';
-  import Basics from './components/Introduction/Basics.svelte';
+  import {Router, Route} from 'svelte-routing';
+  import Introduction from './components/Introduction/Introduction.svelte';
+  import Nav from './components/Nav.svelte';
+  import Reactivity from './components/Reactivity/Reactivity.svelte';
 
   export let url = '';
 </script>
@@ -8,10 +10,9 @@
 <main>
   <h1>Svelte tutorial and sandbox</h1>
   <Router url={url}>
-    <nav>
-      <Link to="introduction/basics">Basics</Link>
-    </nav>
-    <Route path="introduction/basics" component="{Basics}"/>
+    <Route path="/" component={Nav}/>
+    <Route path="introduction" component={Introduction}/>
+    <Route path="reactivity" component={Reactivity}/>
   </Router>
 </main>
 
