@@ -6,7 +6,7 @@
 <section>
   Introduction
   {name}
-  <Test/>
+  <Test asd="testaaa"/>
 </section>
 
 <style>
