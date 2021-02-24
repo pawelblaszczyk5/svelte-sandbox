@@ -1,14 +1,15 @@
 <script lang="ts">
-  import Test from "./Test.svelte";
-  let name = 'test';
+	import Test from './Test.svelte';
+
+	let name = 'test';
+	const asd = 'testaaa';
 </script>
 
 <section>
-  Introduction
-  {name}
-  <Test asd="testaaa"/>
+	Introduction
+	{name}
+	<Test asd="{asd}" />
 </section>
 
 <style>
-
 </style>
