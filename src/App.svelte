@@ -9,10 +9,10 @@
 
 <main>
 	<h1>Svelte tutorial and sandbox</h1>
-	<Router url="{url}">
-		<Route path="/" component="{Nav}" />
-		<Route path="introduction" component="{Introduction}" />
-		<Route path="reactivity" component="{Reactivity}" />
+	<Router {url}>
+		<Route path="/" component={Nav} />
+		<Route path="introduction" component={Introduction} />
+		<Route path="reactivity" component={Reactivity} />
 	</Router>
 </main>
 
