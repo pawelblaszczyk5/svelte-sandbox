@@ -1,5 +1,5 @@
 declare module 'svelte-routing' {
-  import { SvelteComponent, SvelteComponentTyped } from 'svelte';
+  import { SvelteComponentTyped } from 'svelte';
 
   interface LinkProps {
     to: string;
@@ -25,7 +25,7 @@ declare module 'svelte-routing' {
 
   interface RouteProps {
     path?: string;
-    component?: typeof SvelteComponent;
+    component?: typeof SvelteComponentTyped;
 
     [additionalProp: string]: unknown;
   }
