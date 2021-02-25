@@ -6,6 +6,7 @@
 	<nav>
 		<Link to="introduction">Introduction</Link>
 		<Link to="reactivity">Reactivity</Link>
+		<Link to="props">Props</Link>
 	</nav>
 </nav>
 
