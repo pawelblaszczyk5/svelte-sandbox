@@ -1,84 +1,84 @@
 declare module 'svelte-routing' {
-  import { SvelteComponentTyped } from 'svelte';
+	import {SvelteComponent, SvelteComponentTyped} from 'svelte';
 
-  interface LinkProps {
-    to: string;
-    replace?: boolean;
-    state?: {
-      [k in string | number]: unknown;
-    };
-    getProps?: (linkParams: GetPropsParams) => Record<string, any>;
-  }
+	interface LinkProps {
+		to: string;
+		replace?: boolean;
+		state?: {
+			[k in string | number]: unknown;
+		};
+		getProps?: (linkParams: GetPropsParams) => Record<string, any>;
+	}
 
-  interface GetPropsParams {
-    location: RouteLocation;
-    href: string;
-    isPartiallyCurrent: boolean;
-    isCurrent: boolean;
-  }
+	interface GetPropsParams {
+		location: RouteLocation;
+		href: string;
+		isPartiallyCurrent: boolean;
+		isCurrent: boolean;
+	}
 
-  class Link extends SvelteComponentTyped<
-    Omit<LinkProps & svelte.JSX.HTMLProps<HTMLAnchorElement> & svelte.JSX.SapperAnchorProps, 'href'>
-    > {}
+	class Link extends SvelteComponentTyped<
+		Omit<LinkProps & svelte.JSX.HTMLProps<HTMLAnchorElement> & svelte.JSX.SapperAnchorProps, 'href'>
+	> {}
 
-  export { Link };
+	export {Link};
 
-  interface RouteProps {
-    path?: string;
-    component?: typeof SvelteComponentTyped;
+	interface RouteProps {
+		path?: string;
+		component?: typeof SvelteComponent;
 
-    [additionalProp: string]: unknown;
-  }
+		[additionalProp: string]: unknown;
+	}
 
-  interface RouteSlots {
-    default: {
-      location: RouteLocation;
-      params: RouteParams;
-    };
-  }
+	interface RouteSlots {
+		default: {
+			location: RouteLocation;
+			params: RouteParams;
+		};
+	}
 
-  interface RouteLocation {
-    pathname: string;
-    search: string;
-    hash?: string;
-    state: {
-      [k in string | number]: unknown;
-    };
-  }
+	interface RouteLocation {
+		pathname: string;
+		search: string;
+		hash?: string;
+		state: {
+			[k in string | number]: unknown;
+		};
+	}
 
-  interface RouteParams {
-    [param: string]: string;
-  }
+	interface RouteParams {
+		[param: string]: string;
+	}
 
-  class Route extends SvelteComponentTyped<RouteProps, Record<string, any>, RouteSlots> {}
+	class Route extends SvelteComponentTyped<RouteProps, Record<string, any>, RouteSlots> {}
 
-  export { Route, RouteLocation };
+	export {Route, RouteLocation};
 
-  interface RouterProps {
-    basepath?: string;
-    url?: string;
-  }
+	interface RouterProps {
+		basepath?: string;
+		url?: string;
+	}
 
-  class Router extends SvelteComponentTyped<RouterProps> {}
+	class Router extends SvelteComponentTyped<RouterProps> {}
 
-  export { Router };
+	export {Router};
 
-  const link: (node: Element) => { destroy(): void };
-  const links: (node: Element) => { destroy(): void };
+	const link: (node: Element) => {destroy(): void};
+	const links: (node: Element) => {destroy(): void};
 
-  export { link, links };
-  const navigate: (
-    to: string,
-    {
-      replace,
-      state,
-    }?: {
-      replace?: boolean;
-      state?: {
-        [k in string | number]: unknown;
-      };
-    },
-  ) => void;
+	export {link, links};
+	const navigate: (
+		to: string,
+		{
+			replace,
+			state,
+		}?: {
+			replace?: boolean;
+			state?: {
+				[k in string | number]: unknown;
+			};
+		},
+	) => void;
 
-  export { navigate };
+	export {navigate};
 }
