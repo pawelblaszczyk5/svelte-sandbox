@@ -12,11 +12,21 @@
 <main>
 	<h1>Svelte tutorial and sandbox</h1>
 	<Router {url}>
-		<Route path="/" component={Nav} />
-		<Route path="introduction" component={Introduction} />
-		<Route path="reactivity" component={Reactivity} />
-		<Route path="props" component={Props} />
-		<Route path="logic" component={Logic} />
+		<Route path="/">
+			<Nav />
+		</Route>
+		<Route path="introduction">
+			<Introduction />
+		</Route>
+		<Route path="reactivity">
+			<Reactivity />
+		</Route>
+		<Route path="props">
+			<Props />
+		</Route>
+		<Route path="logic">
+			<Logic />
+		</Route>
 	</Router>
 </main>
 
