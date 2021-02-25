@@ -1,16 +1,20 @@
 <script lang="ts">
-	let count = 5;
+	let count = 1;
+	let disabled = false;
+
+	$: log2ofCount = Math.log2(count);
+	$: if (count > 2 ** 5) {
+		disabled = true;
+	}
 </script>
 
 <section>
 	Reactivity
 	<div>
-		<button
-			on:click={() => {
-				count *= 2;
-			}}>
+		<button {disabled} on:click={() => (count *= 2)}>
 			Double the {count}
 		</button>
+		<p>Log2 of count is {log2ofCount}</p>
 	</div>
 </section>
 
