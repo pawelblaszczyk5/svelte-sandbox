@@ -8,6 +8,7 @@
 		<Link to="reactivity">Reactivity</Link>
 		<Link to="props">Props</Link>
 		<Link to="logic">Logic</Link>
+		<Link to="events">Events</Link>
 	</nav>
 </nav>
 

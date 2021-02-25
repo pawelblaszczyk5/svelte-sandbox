@@ -5,6 +5,7 @@
 	import Reactivity from './components/Reactivity/Reactivity.svelte';
 	import Props from './components/Props/Props.svelte';
 	import Logic from './components/Logic/Logic.svelte';
+	import Events from './components/Events/Events.svelte';
 
 	export let url = '';
 </script>
@@ -26,6 +27,9 @@
 		</Route>
 		<Route path="logic">
 			<Logic />
+		</Route>
+		<Route path="events">
+			<Events />
 		</Route>
 	</Router>
 </main>
