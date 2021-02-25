@@ -24,12 +24,6 @@
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 1em;
-	}
-
 	.special {
 		color: #333333;
 		font-weight: bolder;

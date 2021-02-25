@@ -42,6 +42,13 @@
 		margin: 0 auto;
 	}
 
+	:global(section) {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		align-items: center;
+	}
+
 	h1 {
 		color: #ff3e00;
 		text-transform: uppercase;

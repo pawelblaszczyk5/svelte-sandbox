@@ -56,12 +56,3 @@
 		Sorry, unexpected error, try again later, {err}
 	{/await}
 </section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 1em;
-	}
-</style>

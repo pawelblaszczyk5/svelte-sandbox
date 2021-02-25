@@ -13,6 +13,3 @@
 	<PropsTest stringProp="Props in svelte are super easy" />
 	<PropsSpreadTest {...personalInformation} />
 </section>
-
-<style>
-</style>

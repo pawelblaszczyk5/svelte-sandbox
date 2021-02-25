@@ -5,6 +5,3 @@
 </script>
 
 <p>I am {name} {surname} and I am {age} years old.</p>
-
-<style>
-</style>

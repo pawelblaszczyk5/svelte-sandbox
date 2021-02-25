@@ -17,11 +17,3 @@
 		<p>Log2 of count is {log2ofCount}</p>
 	</div>
 </section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 1em;
-	}
-</style>
