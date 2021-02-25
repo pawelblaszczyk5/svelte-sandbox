@@ -4,6 +4,7 @@
 	import Nav from './components/Nav.svelte';
 	import Reactivity from './components/Reactivity/Reactivity.svelte';
 	import Props from './components/Props/Props.svelte';
+	import Logic from './components/Logic/Logic.svelte';
 
 	export let url = '';
 </script>
@@ -15,6 +16,7 @@
 		<Route path="introduction" component={Introduction} />
 		<Route path="reactivity" component={Reactivity} />
 		<Route path="props" component={Props} />
+		<Route path="logic" component={Logic} />
 	</Router>
 </main>
 
