@@ -1,11 +1,11 @@
 <script lang="ts">
 	import {Router, Route} from 'svelte-routing';
-	import Introduction from './components/Introduction/Introduction.svelte';
 	import Nav from './components/Nav.svelte';
 	import Reactivity from './components/Reactivity/Reactivity.svelte';
 	import Props from './components/Props/Props.svelte';
 	import Logic from './components/Logic/Logic.svelte';
 	import Events from './components/Events/Events.svelte';
+	import Introduction from './components/Introduction/Introduction.svelte';
 
 	export let url = '';
 </script>
@@ -16,21 +16,11 @@
 		<Route path="/">
 			<Nav />
 		</Route>
-		<Route path="introduction">
-			<Introduction />
-		</Route>
-		<Route path="reactivity">
-			<Reactivity />
-		</Route>
-		<Route path="props">
-			<Props />
-		</Route>
-		<Route path="logic">
-			<Logic />
-		</Route>
-		<Route path="events">
-			<Events />
-		</Route>
+		<Route path="introduction" component={Introduction} />
+		<Route path="reactivity" component={Reactivity} />
+		<Route path="props" component={Props} />
+		<Route path="logic" component={Logic} />
+		<Route path="events" component={Events} />
 	</Router>
 </main>
 
