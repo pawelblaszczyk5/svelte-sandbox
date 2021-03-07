@@ -9,6 +9,7 @@
 	import Bindings from './components/Bindings/Bindings.svelte';
 	import Lifecycle from './components/Lifecycle/Lifecycle.svelte';
 	import Stores from './components/Stores/Stores.svelte';
+	import Motion from './components/Motion/Motion.svelte';
 
 	export let url = '';
 </script>
@@ -16,9 +17,7 @@
 <main>
 	<h1>Svelte tutorial and sandbox</h1>
 	<Router {url}>
-		<Route path="/">
-			<Nav />
-		</Route>
+		<Route path="/" component={Nav} />
 		<Route path="introduction" component={Introduction} />
 		<Route path="reactivity" component={Reactivity} />
 		<Route path="props" component={Props} />
@@ -27,6 +26,7 @@
 		<Route path="bindings" component={Bindings} />
 		<Route path="lifecycle" component={Lifecycle} />
 		<Route path="stores" component={Stores} />
+		<Route path="motion" component={Motion} />
 	</Router>
 </main>
 

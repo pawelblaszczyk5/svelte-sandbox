@@ -3,16 +3,15 @@
 </script>
 
 <nav>
-	<nav>
-		<Link to="introduction">Introduction</Link>
-		<Link to="reactivity">Reactivity</Link>
-		<Link to="props">Props</Link>
-		<Link to="logic">Logic</Link>
-		<Link to="events">Events</Link>
-		<Link to="bindings">Bindings</Link>
-		<Link to="lifecycle">Lifecycle</Link>
-		<Link to="stores">Stores</Link>
-	</nav>
+	<Link to="introduction">Introduction</Link>
+	<Link to="reactivity">Reactivity</Link>
+	<Link to="props">Props</Link>
+	<Link to="logic">Logic</Link>
+	<Link to="events">Events</Link>
+	<Link to="bindings">Bindings</Link>
+	<Link to="lifecycle">Lifecycle</Link>
+	<Link to="stores">Stores</Link>
+	<Link to="motion">Motion</Link>
 </nav>
 
 <style>
