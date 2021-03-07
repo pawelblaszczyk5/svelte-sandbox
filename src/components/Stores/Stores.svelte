@@ -28,6 +28,3 @@
 	<p>But maybe you want to help randomizer?</p>
 	<input bind:value={$randomNumber} />
 </section>
-
-<style>
-</style>
