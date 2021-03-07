@@ -3,6 +3,7 @@
 	import {elapsed} from '../../stores/testDerivedStore';
 	import {time} from '../../stores/testReadableStore';
 	import {count} from '../../stores/testWritableStore';
+	import BackToHome from '../BackToHome/BackToHome.svelte';
 	import DeDouble from './DeDouble.svelte';
 	import Double from './Double.svelte';
 	import RandomNumberSetter from './RandomNumberSetter.svelte';
@@ -16,6 +17,7 @@
 </script>
 
 <section>
+	<BackToHome />
 	<p>That's my super stored value {$count}</p>
 	<Double />
 	<DeDouble />
