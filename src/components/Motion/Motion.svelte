@@ -1,6 +1,7 @@
 <script lang="ts">
 	import {spring, tweened} from 'svelte/motion';
 	import {cubicOut} from 'svelte/easing';
+	import BackToHome from '../BackToHome/BackToHome.svelte';
 
 	const progress = tweened(0, {
 		duration: 400,
@@ -17,6 +18,7 @@
 </script>
 
 <section>
+	<BackToHome />
 	<div>
 		<progress value={$progress} />
 		<button on:click={() => progress.set(0)}> 0% </button>
@@ -31,6 +33,10 @@
 </section>
 
 <style>
+	:global(section > *) {
+		z-index: 2;
+	}
+
 	svg {
 		width: 100vw;
 		height: 100vh;
@@ -42,9 +48,5 @@
 
 	circle {
 		fill: #ff3e00;
-	}
-
-	div {
-		z-index: 2;
 	}
 </style>
