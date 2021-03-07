@@ -1,5 +1,6 @@
 <script lang="ts">
 	import {onMount} from 'svelte';
+	import BackToHome from '../BackToHome/BackToHome.svelte';
 	import SuperInput from './SuperInput.svelte';
 
 	let name = 'world';
@@ -32,6 +33,7 @@
 </script>
 
 <section>
+	<BackToHome />
 	<input type="text" bind:value={name} />
 	<p>Hello {name}</p>
 	<p>Raise x to the power of y</p>

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import BackToHome from '../BackToHome/BackToHome.svelte';
+
 	let count = 1;
 	let disabled = false;
 
@@ -9,6 +11,7 @@
 </script>
 
 <section>
+	<BackToHome />
 	Reactivity
 	<div>
 		<button {disabled} on:click={() => (count *= 2)}>

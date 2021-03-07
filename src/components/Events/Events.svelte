@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BackToHome from '../BackToHome/BackToHome.svelte';
 	import CustomEvent from './CustomEvent.svelte';
 	import EventForwarder from './EventForwarder.svelte';
 	import SuperCustomButton from './SuperCustomButton.svelte';
@@ -23,6 +24,7 @@
 </script>
 
 <section>
+	<BackToHome />
 	<div
 		style="color: {isHoveringParagraph ? 'red' : null}; background-color: {isHoveringParagraph ? 'steelBlue' : null}"
 		on:mouseenter={handleMouseEnter}

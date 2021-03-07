@@ -1,5 +1,6 @@
 <script lang="ts">
 	import axios from 'axios';
+	import BackToHome from '../BackToHome/BackToHome.svelte';
 
 	interface MockData {
 		color: string;
@@ -15,6 +16,7 @@
 </script>
 
 <section>
+	<BackToHome />
 	{#if shouldShowSomething}
 		I should not be visible
 	{/if}

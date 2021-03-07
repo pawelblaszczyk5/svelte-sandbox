@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BackToHome from '../BackToHome/BackToHome.svelte';
 	import Nested from './Nested.svelte';
 
 	const name = 'testName';
@@ -7,6 +8,7 @@
 </script>
 
 <section>
+	<BackToHome />
 	Introduction
 	<div>
 		<p>Uppercase variable {name.toUpperCase()}</p>

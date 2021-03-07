@@ -1,6 +1,7 @@
 <script lang="ts">
 	import PropsTest from './PropsTest.svelte';
 	import PropsSpreadTest from './PropsSpreadTest.svelte';
+	import BackToHome from '../BackToHome/BackToHome.svelte';
 
 	const personalInformation = {
 		name: 'Paweł',
@@ -10,6 +11,7 @@
 </script>
 
 <section>
+	<BackToHome />
 	<PropsTest stringProp="Props in svelte are super easy" />
 	<PropsSpreadTest {...personalInformation} />
 </section>
