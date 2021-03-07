@@ -7,6 +7,7 @@
 	import Events from './components/Events/Events.svelte';
 	import Introduction from './components/Introduction/Introduction.svelte';
 	import Bindings from './components/Bindings/Bindings.svelte';
+	import Lifecycle from './components/Lifecycle/Lifecycle.svelte';
 
 	export let url = '';
 </script>
@@ -23,6 +24,7 @@
 		<Route path="logic" component={Logic} />
 		<Route path="events" component={Events} />
 		<Route path="bindings" component={Bindings} />
+		<Route path="lifecycle" component={Lifecycle} />
 	</Router>
 </main>
 

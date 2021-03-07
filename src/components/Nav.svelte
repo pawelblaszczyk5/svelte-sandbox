@@ -10,6 +10,7 @@
 		<Link to="logic">Logic</Link>
 		<Link to="events">Events</Link>
 		<Link to="bindings">Bindings</Link>
+		<Link to="lifecycle">Lifecycle</Link>
 	</nav>
 </nav>
 
