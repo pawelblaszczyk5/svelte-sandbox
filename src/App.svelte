@@ -10,6 +10,7 @@
 	import Lifecycle from './components/Lifecycle/Lifecycle.svelte';
 	import Stores from './components/Stores/Stores.svelte';
 	import Motion from './components/Motion/Motion.svelte';
+	import Transitions from './components/Transitions/Transitions.svelte';
 
 	export let url = '';
 </script>
@@ -27,6 +28,7 @@
 		<Route path="lifecycle" component={Lifecycle} />
 		<Route path="stores" component={Stores} />
 		<Route path="motion" component={Motion} />
+		<Route path="transitions" component={Transitions} />
 	</Router>
 </main>
 

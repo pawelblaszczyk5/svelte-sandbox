@@ -12,6 +12,7 @@
 	<Link to="lifecycle">Lifecycle</Link>
 	<Link to="stores">Stores</Link>
 	<Link to="motion">Motion</Link>
+	<Link to="transitions">Transitions</Link>
 </nav>
 
 <style>
