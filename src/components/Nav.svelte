@@ -11,6 +11,7 @@
 		<Link to="events">Events</Link>
 		<Link to="bindings">Bindings</Link>
 		<Link to="lifecycle">Lifecycle</Link>
+		<Link to="stores">Stores</Link>
 	</nav>
 </nav>
 
