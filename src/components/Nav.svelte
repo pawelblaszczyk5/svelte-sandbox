@@ -9,6 +9,7 @@
 		<Link to="props">Props</Link>
 		<Link to="logic">Logic</Link>
 		<Link to="events">Events</Link>
+		<Link to="bindings">Bindings</Link>
 	</nav>
 </nav>
 
