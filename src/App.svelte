@@ -13,6 +13,7 @@
 	import Transitions from './components/Transitions/Transitions.svelte';
 	import Actions from './components/Actions/Actions.svelte';
 	import Classes from './components/Classes/Classes.svelte';
+	import Slots from './components/Slots/Slots.svelte';
 
 	export let url = '';
 </script>
@@ -33,6 +34,7 @@
 		<Route path="transitions" component={Transitions} />
 		<Route path="actions" component={Actions} />
 		<Route path="classes" component={Classes} />
+		<Route path="slots" component={Slots} />
 	</Router>
 </main>
 

@@ -15,6 +15,7 @@
 	<Link to="transitions">Transitions</Link>
 	<Link to="actions">Actions</Link>
 	<Link to="classes">Classes</Link>
+	<Link to="slots">Slots</Link>
 </nav>
 
 <style>
