@@ -19,6 +19,7 @@
 	<Link to="context">Context</Link>
 	<Link to="special_elements">Special Elements</Link>
 	<Link to="module_context">Module Context</Link>
+	<Link to="debug">Debug</Link>
 </nav>
 
 <style>

@@ -17,6 +17,7 @@
 	import Context from './components/Context/Context.svelte';
 	import SpecialElements from './components/SpecialElements/SpecialElements.svelte';
 	import ModuleContext from './components/ModuleContext/ModuleContext.svelte';
+	import Debug from './components/Debug/Debug.svelte';
 
 	export let url = '';
 </script>
@@ -41,6 +42,7 @@
 		<Route path="context" component={Context} />
 		<Route path="special_elements" component={SpecialElements} />
 		<Route path="module_context" component={ModuleContext} />
+		<Route path="debug" component={Debug} />
 	</Router>
 </main>
 
