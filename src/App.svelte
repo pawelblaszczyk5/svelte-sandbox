@@ -15,6 +15,7 @@
 	import Classes from './components/Classes/Classes.svelte';
 	import Slots from './components/Slots/Slots.svelte';
 	import Context from './components/Context/Context.svelte';
+	import SpecialElements from './components/SpecialElements/SpecialElements.svelte';
 
 	export let url = '';
 </script>
@@ -37,6 +38,7 @@
 		<Route path="classes" component={Classes} />
 		<Route path="slots" component={Slots} />
 		<Route path="context" component={Context} />
+		<Route path="special_elements" component={SpecialElements} />
 	</Router>
 </main>
 
