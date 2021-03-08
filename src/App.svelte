@@ -12,6 +12,7 @@
 	import Motion from './components/Motion/Motion.svelte';
 	import Transitions from './components/Transitions/Transitions.svelte';
 	import Actions from './components/Actions/Actions.svelte';
+	import Classes from './components/Classes/Classes.svelte';
 
 	export let url = '';
 </script>
@@ -31,6 +32,7 @@
 		<Route path="motion" component={Motion} />
 		<Route path="transitions" component={Transitions} />
 		<Route path="actions" component={Actions} />
+		<Route path="classes" component={Classes} />
 	</Router>
 </main>
 
