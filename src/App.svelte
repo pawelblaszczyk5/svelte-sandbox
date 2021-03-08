@@ -16,6 +16,7 @@
 	import Slots from './components/Slots/Slots.svelte';
 	import Context from './components/Context/Context.svelte';
 	import SpecialElements from './components/SpecialElements/SpecialElements.svelte';
+	import ModuleContext from './components/ModuleContext/ModuleContext.svelte';
 
 	export let url = '';
 </script>
@@ -39,6 +40,7 @@
 		<Route path="slots" component={Slots} />
 		<Route path="context" component={Context} />
 		<Route path="special_elements" component={SpecialElements} />
+		<Route path="module_context" component={ModuleContext} />
 	</Router>
 </main>
 

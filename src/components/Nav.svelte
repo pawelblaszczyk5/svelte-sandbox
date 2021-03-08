@@ -18,6 +18,7 @@
 	<Link to="slots">Slots</Link>
 	<Link to="context">Context</Link>
 	<Link to="special_elements">Special Elements</Link>
+	<Link to="module_context">Module Context</Link>
 </nav>
 
 <style>
