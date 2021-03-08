@@ -16,6 +16,7 @@
 	<Link to="actions">Actions</Link>
 	<Link to="classes">Classes</Link>
 	<Link to="slots">Slots</Link>
+	<Link to="context">Context</Link>
 </nav>
 
 <style>
