@@ -11,6 +11,7 @@
 	import Stores from './components/Stores/Stores.svelte';
 	import Motion from './components/Motion/Motion.svelte';
 	import Transitions from './components/Transitions/Transitions.svelte';
+	import Actions from './components/Actions/Actions.svelte';
 
 	export let url = '';
 </script>
@@ -29,6 +30,7 @@
 		<Route path="stores" component={Stores} />
 		<Route path="motion" component={Motion} />
 		<Route path="transitions" component={Transitions} />
+		<Route path="actions" component={Actions} />
 	</Router>
 </main>
 

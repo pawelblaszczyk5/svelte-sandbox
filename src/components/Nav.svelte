@@ -13,6 +13,7 @@
 	<Link to="stores">Stores</Link>
 	<Link to="motion">Motion</Link>
 	<Link to="transitions">Transitions</Link>
+	<Link to="actions">Actions</Link>
 </nav>
 
 <style>
