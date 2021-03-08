@@ -1,11 +1,12 @@
 <script lang="ts">
+	import BackToHome from '../BackToHome/BackToHome.svelte';
 	import TestComponent, {resetCounter} from './TestComponent.svelte';
 	let currentTestComponentCount = 1;
 	$: arr = new Array(currentTestComponentCount);
 </script>
 
 <section>
-	<p>ModuleContext works!</p>
+	<BackToHome />
 	<button on:click={() => currentTestComponentCount++}> Add new TestComponent </button>
 	<button on:click={resetCounter}>Reset counter</button>
 	{#each arr as test}
